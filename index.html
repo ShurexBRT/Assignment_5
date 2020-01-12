@@ -5,8 +5,30 @@
     <meta charset="UTF-8">
     <title>Advanced CSS - Assignment 1</title>
     <style>
+        a[href^="https://www.google"] {
+            color: green;
+        }
 
+        a[href^="https://www.link-group.eu"] {
+            color: red;
+        }
 
+        #second-div p:nth-child(2n+2) {
+            color: red;
+        }
+
+        #second-div p:nth-child(2n+3) {
+            color: blue;
+        }
+
+        #first-div>p::after {
+            content: "-NEW";
+            color: yellow;
+        }
+
+        body>p:last-of-type:hover {
+            font-style: italic;
+        }
     </style>
 </head>
 
